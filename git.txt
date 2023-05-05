@@ -1,0 +1,5 @@
+git status (it will in red)
+git add .
+git status (it should in green)
+git commit -m "any comment"
+git push origin main
