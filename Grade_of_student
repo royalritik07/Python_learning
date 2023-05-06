@@ -1,0 +1,19 @@
+maths=int(input("Enter your marks in maths : "))
+science=int(input("Enter your marks in science : "))
+sst=int(input("Enter your marks in sst : "))
+english=int(input("Enter your marks in english : "))
+percentage=(maths+science+sst+english)/400*100
+if(percentage>=90 or percentage<=100):
+    print("Grade A")
+elif(percentage>=80 or percentage<90):
+    print("Grade B")
+elif(percentage>=70 or percentage<80):
+    print("Grade C")
+elif(percentage>=50 or petcentage<70):
+    print("Grade D")
+elif(percentage>=33 or percentage<50):
+    print("Grade E")
+elif(percentage<33 or percentage>=0):
+    print("fail") 
+else:
+    print("Invalid")                      
