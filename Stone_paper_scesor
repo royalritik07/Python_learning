@@ -1,0 +1,33 @@
+import random
+def game(comp,player):
+    if comp==player:
+        print("None")
+        if (comp=="S" and player=="P"):
+            print("You Win")
+        elif(comp=="S" and player=="C"):
+            print("You Lose")
+        elif(comp=="P" and player=="S"):
+            print("You Lose")
+        elif(comp=="P" and player=="C"):
+            print("You Won")
+        elif(comp=="C" and player=="P"):
+            print("You Lose")
+        elif(comp=="C" and player=="S"):
+            print("You Win")
+        else:
+            print("Invalid")
+    else:
+        print("Wrong")                                
+random_no=random.randint(1,3)
+print("Comp Turn : Select Stone(1), paper(2), sccesor(3) : ")
+
+if random_no==1:
+    comp="S"
+elif random_no==2:
+    comp="P"
+elif random_no==3:
+    comp="C"
+else: 
+    print("none")
+    player=input("Select Stone(1), paper(2), sccesor(3) : ")
+a=game(comp,player) 
